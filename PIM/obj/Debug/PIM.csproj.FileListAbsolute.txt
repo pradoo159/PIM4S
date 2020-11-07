@@ -8,13 +8,6 @@ C:\Users\ALFREDO\source\repos\PIM\PIM\obj\Debug\PIM.csproj.GenerateResource.cach
 C:\Users\ALFREDO\source\repos\PIM\PIM\obj\Debug\PIM.csproj.CoreCompileInputs.cache
 C:\Users\ALFREDO\source\repos\PIM\PIM\obj\Debug\PIM.exe
 C:\Users\ALFREDO\source\repos\PIM\PIM\obj\Debug\PIM.pdb
-C:\Users\ALFREDO\source\repos\PIM\PIM\bin\Debug\BouncyCastle.Crypto.dll
-C:\Users\ALFREDO\source\repos\PIM\PIM\bin\Debug\Google.Protobuf.dll
-C:\Users\ALFREDO\source\repos\PIM\PIM\bin\Debug\K4os.Compression.LZ4.Streams.dll
-C:\Users\ALFREDO\source\repos\PIM\PIM\bin\Debug\MySql.Data.dll
-C:\Users\ALFREDO\source\repos\PIM\PIM\bin\Debug\Renci.SshNet.dll
-C:\Users\ALFREDO\source\repos\PIM\PIM\bin\Debug\Ubiety.Dns.Core.dll
-C:\Users\ALFREDO\source\repos\PIM\PIM\bin\Debug\Zstandard.Net.dll
 C:\Users\ALFREDO\source\repos\PIM\PIM\bin\Debug\System.Memory.dll
 C:\Users\ALFREDO\source\repos\PIM\PIM\bin\Debug\K4os.Compression.LZ4.dll
 C:\Users\ALFREDO\source\repos\PIM\PIM\bin\Debug\K4os.Hash.xxHash.dll
@@ -24,3 +17,4 @@ C:\Users\ALFREDO\source\repos\PIM\PIM\bin\Debug\MySql.Data.xml
 C:\Users\ALFREDO\source\repos\PIM\PIM\obj\Debug\PIM.exe.config
 C:\Users\ALFREDO\source\repos\PIM\PIM\obj\Debug\PIM.csproj.CopyComplete
 C:\Users\ALFREDO\source\repos\PIM\PIM\obj\Debug\PIM.formHome.resources
+C:\Users\ALFREDO\source\repos\PIM\PIM\obj\Debug\PIM.formCadastro.resources

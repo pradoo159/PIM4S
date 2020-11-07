@@ -33,10 +33,6 @@
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.txtLogin = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
-            this.dbloginDataSet = new PIM.dbloginDataSet();
-            this.tbaccountBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbaccountTableAdapter = new PIM.dbloginDataSetTableAdapters.tbaccountTableAdapter();
-            this.tableAdapterManager = new PIM.dbloginDataSetTableAdapters.TableAdapterManager();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCadastrar = new System.Windows.Forms.Button();
@@ -49,13 +45,17 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dbloginDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbaccountBindingSource)).BeginInit();
+            this.dbloginDataSet = new PIM.dbloginDataSet();
+            this.tbaccountBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbaccountTableAdapter = new PIM.dbloginDataSetTableAdapters.tbaccountTableAdapter();
+            this.tableAdapterManager = new PIM.dbloginDataSetTableAdapters.TableAdapterManager();
             this.panelWinCustom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbloginDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbaccountBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnConfirmar
@@ -103,26 +103,6 @@
             this.txtSenha.MouseClick += new System.Windows.Forms.MouseEventHandler(this.limparSenha);
             this.txtSenha.TextChanged += new System.EventHandler(this.esconderSenha);
             this.txtSenha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSenha_KeyDown);
-            // 
-            // dbloginDataSet
-            // 
-            this.dbloginDataSet.DataSetName = "dbloginDataSet";
-            this.dbloginDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tbaccountBindingSource
-            // 
-            this.tbaccountBindingSource.DataMember = "tbaccount";
-            this.tbaccountBindingSource.DataSource = this.dbloginDataSet;
-            // 
-            // tbaccountTableAdapter
-            // 
-            this.tbaccountTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.tbaccountTableAdapter = this.tbaccountTableAdapter;
-            this.tableAdapterManager.UpdateOrder = PIM.dbloginDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // panel1
             // 
@@ -273,6 +253,26 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // dbloginDataSet
+            // 
+            this.dbloginDataSet.DataSetName = "dbloginDataSet";
+            this.dbloginDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tbaccountBindingSource
+            // 
+            this.tbaccountBindingSource.DataMember = "tbaccount";
+            this.tbaccountBindingSource.DataSource = this.dbloginDataSet;
+            // 
+            // tbaccountTableAdapter
+            // 
+            this.tbaccountTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.tbaccountTableAdapter = this.tbaccountTableAdapter;
+            this.tableAdapterManager.UpdateOrder = PIM.dbloginDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // formLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -298,14 +298,14 @@
             this.Text = "PIM BlockChain";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.formLogin_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dbloginDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbaccountBindingSource)).EndInit();
             this.panelWinCustom.ResumeLayout(false);
             this.panelWinCustom.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbloginDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbaccountBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
