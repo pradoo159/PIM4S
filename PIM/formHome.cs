@@ -21,5 +21,27 @@ namespace PIM
         {
 
         }
+
+        private void btnHomeBroker_Click(object sender, EventArgs e)
+        {
+            homeBroker homeBroker = new homeBroker();
+            homeBroker.Show();
+        }
+
+        private void btnCarteira_Click(object sender, EventArgs e)
+        {
+            carteiraInvestimento carteira = new carteiraInvestimento();
+            carteira.Show();
+        }
+
+        private void btnControle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
