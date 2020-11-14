@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formLogin));
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.txtLogin = new System.Windows.Forms.TextBox();
@@ -45,17 +44,11 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dbloginDataSet = new PIM.dbloginDataSet();
-            this.tbaccountBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbaccountTableAdapter = new PIM.dbloginDataSetTableAdapters.tbaccountTableAdapter();
-            this.tableAdapterManager = new PIM.dbloginDataSetTableAdapters.TableAdapterManager();
             this.panelWinCustom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbloginDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbaccountBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnConfirmar
@@ -253,26 +246,6 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // dbloginDataSet
-            // 
-            this.dbloginDataSet.DataSetName = "dbloginDataSet";
-            this.dbloginDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tbaccountBindingSource
-            // 
-            this.tbaccountBindingSource.DataMember = "tbaccount";
-            this.tbaccountBindingSource.DataSource = this.dbloginDataSet;
-            // 
-            // tbaccountTableAdapter
-            // 
-            this.tbaccountTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.tbaccountTableAdapter = this.tbaccountTableAdapter;
-            this.tableAdapterManager.UpdateOrder = PIM.dbloginDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
             // formLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,8 +277,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbloginDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbaccountBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,10 +287,6 @@
         private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.TextBox txtLogin;
         private System.Windows.Forms.TextBox txtSenha;
-        private dbloginDataSet dbloginDataSet;
-        private System.Windows.Forms.BindingSource tbaccountBindingSource;
-        private dbloginDataSetTableAdapters.tbaccountTableAdapter tbaccountTableAdapter;
-        private dbloginDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;

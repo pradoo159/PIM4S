@@ -23,6 +23,11 @@ namespace PIM
             InitializeComponent();
         }
 
+        private void novoFormLogin()
+        {
+            Application.Run(new formLogin());
+        }
+
         private void tbaccountBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
@@ -36,11 +41,6 @@ namespace PIM
             // TODO: esta linha de código carrega dados na tabela 'dbloginDataSet.tbaccount'. Você pode movê-la ou removê-la conforme necessário.
             //this.tbaccountTableAdapter.Fill(this.dbloginDataSet.tbaccount);
 
-        }
-
-        private void novoForm()
-        {
-            Application.Run(new formHome());
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -71,6 +71,15 @@ namespace PIM
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            formLogin login = new formLogin();
+            nt = new Thread(novoFormLogin);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+            this.Close();
         }
     }
 }

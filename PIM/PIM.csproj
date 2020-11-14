@@ -171,5 +171,8 @@
   <ItemGroup>
     <None Include="Resources\gender.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-arrow.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

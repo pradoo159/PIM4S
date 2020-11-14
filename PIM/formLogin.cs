@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace PIM
 {
@@ -22,15 +23,6 @@ namespace PIM
         {
             InitializeComponent();
         }
-
-        private void tbaccountBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.tbaccountBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.dbloginDataSet);
-
-        }
-
         private void formLogin_Load(object sender, EventArgs e)
         {
             // TODO: esta linha de código carrega dados na tabela 'dbloginDataSet.tbaccount'. Você pode movê-la ou removê-la conforme necessário.
@@ -40,7 +32,7 @@ namespace PIM
 
         private void novoForm()
         {
-            Application.Run(new formHome()); 
+            Application.Run(new formHome());
         }
 
         private void novoFormCadastro()
@@ -53,14 +45,14 @@ namespace PIM
             String usuario = txtLogin.Text;
             String senha = txtSenha.Text;
             // Config da conexão
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-30C2FUG\\SQLEXPRESS;Initial Catalog=bdpim;User ID=admin;Password=admin123");
-            
+            SqlConnection con = new SqlConnection("Data Source=ALFREDO-PC\\SQLEXPRESS;Initial Catalog=dbpim;User ID=sa;Password=admin123");
+
             // QUERY PARA CONSULTAR OS DADOS
-            String query = "Select * from tbauth Where usuario = '"+txtLogin.Text.Trim()+"' and senha = '"+txtSenha.Text.Trim()+"'";
+            String query = "Select * from tblogin Where usuario = '" + txtLogin.Text.Trim() + "' and senha = '" + txtSenha.Text.Trim() + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             DataTable dtbl = new DataTable();
             sda.Fill(dtbl);
-            
+
             // LÓGICA DE LOGIN
             if (dtbl.Rows.Count == 1)
             {
@@ -75,14 +67,15 @@ namespace PIM
                 MessageBox.Show("Credenciais inválidas");
             }
 
-          /*  //query 
-            if (Convert.ToBoolean(this.tbaccountTableAdapter.FillByLogin(this.dbloginDataSet.tbaccount, usuario, senha)))
-            {
-            }
-            else
-            {
-                MessageBox.Show("Credenciais inválidas");
-            }*/
+
+            /*  //query 
+              if (Convert.ToBoolean(this.tbaccountTableAdapter.FillByLogin(this.dbloginDataSet.tbaccount, usuario, senha)))
+              {
+              }
+              else
+              {
+                  MessageBox.Show("Credenciais inválidas");
+              }*/
         }
 
         private void limparLogin(object sender, MouseEventArgs e)
@@ -142,7 +135,7 @@ namespace PIM
 
         private void panelWinCustom_MouseMove(object sender, MouseEventArgs e)
         {
-            if(e.Button == MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
             {
                 Point mousePose = Control.MousePosition;
                 mousePose.Offset(mouseLocation.X, mouseLocation.Y);
@@ -152,7 +145,7 @@ namespace PIM
 
         private void txtSenha_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 btnConfirmar.PerformClick();
             }
