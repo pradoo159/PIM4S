@@ -16,11 +16,14 @@ namespace PIM
     {
         Thread nt;
         public Point mouseLocation;
-
+        private bool pessoaFisica;
 
         public formCadastro()
         {
             InitializeComponent();
+            pfCadastroControl1.BringToFront();
+            cadastroSelecionado(btnPF);
+            pessoaFisica = true;
         }
 
         private void novoFormLogin()
@@ -28,13 +31,6 @@ namespace PIM
             Application.Run(new formLogin());
         }
 
-        private void tbaccountBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.tbaccountBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.dbloginDataSet);
-
-        }
 
         private void formLogin_Load(object sender, EventArgs e)
         {
@@ -80,6 +76,66 @@ namespace PIM
             nt.SetApartmentState(ApartmentState.STA);
             nt.Start();
             this.Close();
+        }
+
+        private void pfCadastroControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPJ_MouseClick(object sender, MouseEventArgs e)
+        {
+            pjCadastroControl1.BringToFront();
+            cadastroSelecionado(btnPJ);
+            pessoaFisica = false;
+            removerSelecao(btnPF);
+        }
+
+        private void btnPF_MouseClick(object sender, MouseEventArgs e)
+        {
+            pfCadastroControl1.BringToFront();
+            cadastroSelecionado(btnPF);
+            pessoaFisica = true;
+            removerSelecao(btnPJ);
+        }
+
+        static void cadastroSelecionado(Button botao)
+        {
+            botao.ForeColor = Color.White;
+            botao.BackColor = Color.FromArgb(66, 195, 207);
+            botao.FlatAppearance.BorderColor = Color.FromArgb(66, 195, 207);
+        }
+
+        static void removerSelecao(Button botao)
+        {
+            botao.ForeColor = Color.FromArgb(66, 195, 207);
+            botao.BackColor = Color.Transparent;
+        }
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection("Data Source=ALFREDO-PC\\SQLEXPRESS;Initial Catalog=BDPIMEXPRESS;User ID=sa;Password=admin123");
+            con.Open();
+            SqlCommand cmd;
+            if (pessoaFisica)
+            {
+                cmd = new SqlCommand("insert into Pessoa_fisica(Nome_Usuario, CPF, email_PF, Telefone, Data_nasc, Login, senha) values ('" + pfCadastroControl1.txtNome.Text + "', '" + pfCadastroControl1.txtCPF.Text + "', " +
+                    "'" + pfCadastroControl1.txtEmail.Text + "', '" + pfCadastroControl1.txtTelefone.Text + "', '" + pfCadastroControl1.txtDataNasc.Text + "', '" + pfCadastroControl1.txtUsusario.Text + "', '" + pfCadastroControl1.txtSenha.Text + "')", con);
+            }
+            else
+            {
+                cmd = new SqlCommand("insert into Pessoa_juridica(Nome_Usuario, CNPJ, email_PJ, Telefone, Data_nasc, login, senha) values ('" + pjCadastroControl1.txtNome.Text + "', '" + pjCadastroControl1.txtCNPJ.Text + "', " +
+                    "'" + pjCadastroControl1.txtEmail.Text + "', '" + pjCadastroControl1.txtTelefone.Text + "', '" + pjCadastroControl1.txtDataNasc.Text + "', '" + pjCadastroControl1.txtUsusario.Text + "', '" + pjCadastroControl1.txtSenha.Text + "')", con);
+            }
+            int i = cmd.ExecuteNonQuery();
+            if (i != 0)
+            {
+                MessageBox.Show("sucesso");
+            }
+            else
+            {
+                MessageBox.Show("Erro");
+            }
         }
     }
 }

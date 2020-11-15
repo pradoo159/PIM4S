@@ -28,89 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formCadastro));
-            this.txtLogin = new System.Windows.Forms.TextBox();
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.panelWinCustom = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
             this.minimizeButton = new System.Windows.Forms.Button();
-            this.dbloginDataSet = new PIM.dbloginDataSet();
-            this.tbaccountBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbaccountTableAdapter = new PIM.dbloginDataSetTableAdapters.tbaccountTableAdapter();
-            this.tableAdapterManager = new PIM.dbloginDataSetTableAdapters.TableAdapterManager();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.txtCPF = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.txtNasc = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.txtSexo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnPJ = new System.Windows.Forms.Button();
+            this.btnPF = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pjCadastroControl1 = new PIM.PJCadastroControl();
+            this.pfCadastroControl1 = new PIM.PFCadastroControl();
             this.panelWinCustom.SuspendLayout();
+            this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbloginDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbaccountBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtLogin
-            // 
-            this.txtLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLogin.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLogin.ForeColor = System.Drawing.Color.White;
-            this.txtLogin.Location = new System.Drawing.Point(85, 133);
-            this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(227, 15);
-            this.txtLogin.TabIndex = 1;
-            this.txtLogin.Text = "Usuário";
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSenha.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.ForeColor = System.Drawing.Color.White;
-            this.txtSenha.Location = new System.Drawing.Point(85, 187);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(227, 15);
-            this.txtSenha.TabIndex = 2;
-            this.txtSenha.Text = "Senha";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(85, 154);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(227, 1);
-            this.panel1.TabIndex = 9;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(85, 208);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(227, 1);
-            this.panel2.TabIndex = 10;
             // 
             // btnConfirmar
             // 
@@ -122,12 +56,13 @@
             this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmar.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmar.ForeColor = System.Drawing.Color.White;
-            this.btnConfirmar.Location = new System.Drawing.Point(32, 457);
+            this.btnConfirmar.Location = new System.Drawing.Point(73, 572);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(280, 46);
             this.btnConfirmar.TabIndex = 11;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = false;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // panelWinCustom
             // 
@@ -139,22 +74,10 @@
             this.panelWinCustom.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelWinCustom.Location = new System.Drawing.Point(0, 0);
             this.panelWinCustom.Name = "panelWinCustom";
-            this.panelWinCustom.Size = new System.Drawing.Size(366, 38);
+            this.panelWinCustom.Size = new System.Drawing.Size(419, 38);
             this.panelWinCustom.TabIndex = 13;
             this.panelWinCustom.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelWinCustom_MouseDown);
             this.panelWinCustom.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelWinCustom_MouseMove);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::PIM.Properties.Resources.icon;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelWinCustom_MouseDown);
-            this.pictureBox4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelWinCustom_MouseMove);
             // 
             // label1
             // 
@@ -177,7 +100,7 @@
             this.exitButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.Location = new System.Drawing.Point(329, 0);
+            this.exitButton.Location = new System.Drawing.Point(381, 0);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(38, 38);
             this.exitButton.TabIndex = 0;
@@ -194,7 +117,7 @@
             this.minimizeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.minimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.minimizeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minimizeButton.Location = new System.Drawing.Point(291, 0);
+            this.minimizeButton.Location = new System.Drawing.Point(343, 0);
             this.minimizeButton.Name = "minimizeButton";
             this.minimizeButton.Size = new System.Drawing.Size(38, 38);
             this.minimizeButton.TabIndex = 0;
@@ -203,172 +126,55 @@
             this.minimizeButton.UseVisualStyleBackColor = true;
             this.minimizeButton.Click += new System.EventHandler(this.minimizeButton_Click);
             // 
-            // dbloginDataSet
-            // 
-            this.dbloginDataSet.DataSetName = "dbloginDataSet";
-            this.dbloginDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tbaccountBindingSource
-            // 
-            this.tbaccountBindingSource.DataMember = "tbaccount";
-            this.tbaccountBindingSource.DataSource = this.dbloginDataSet;
-            // 
-            // tbaccountTableAdapter
-            // 
-            this.tbaccountTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.tbaccountTableAdapter = this.tbaccountTableAdapter;
-            this.tableAdapterManager.UpdateOrder = PIM.dbloginDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(85, 256);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(227, 1);
-            this.panel3.TabIndex = 13;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.ForeColor = System.Drawing.Color.White;
-            this.txtEmail.Location = new System.Drawing.Point(85, 235);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(227, 15);
-            this.txtEmail.TabIndex = 11;
-            this.txtEmail.Text = "Email";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(85, 305);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(227, 1);
-            this.panel4.TabIndex = 13;
-            // 
-            // txtCPF
-            // 
-            this.txtCPF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtCPF.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCPF.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPF.ForeColor = System.Drawing.Color.White;
-            this.txtCPF.Location = new System.Drawing.Point(85, 284);
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(227, 15);
-            this.txtCPF.TabIndex = 11;
-            this.txtCPF.Text = "CPF";
-            this.txtCPF.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(85, 354);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(227, 1);
-            this.panel5.TabIndex = 13;
-            // 
-            // txtNasc
-            // 
-            this.txtNasc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtNasc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNasc.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNasc.ForeColor = System.Drawing.Color.White;
-            this.txtNasc.Location = new System.Drawing.Point(85, 333);
-            this.txtNasc.Name = "txtNasc";
-            this.txtNasc.Size = new System.Drawing.Size(227, 15);
-            this.txtNasc.TabIndex = 11;
-            this.txtNasc.Text = "Data de nascimento";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Location = new System.Drawing.Point(85, 407);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(227, 1);
-            this.panel6.TabIndex = 13;
-            // 
-            // txtSexo
-            // 
-            this.txtSexo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtSexo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSexo.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSexo.ForeColor = System.Drawing.Color.White;
-            this.txtSexo.Location = new System.Drawing.Point(85, 386);
-            this.txtSexo.Name = "txtSexo";
-            this.txtSexo.Size = new System.Drawing.Size(227, 15);
-            this.txtSexo.TabIndex = 11;
-            this.txtSexo.Text = "Sexo";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Sans Unicode", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
-            this.label2.Location = new System.Drawing.Point(96, 50);
+            this.label2.Location = new System.Drawing.Point(118, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(180, 45);
             this.label2.TabIndex = 14;
             this.label2.Text = "Cadastro";
             // 
-            // pictureBox7
+            // panel7
             // 
-            this.pictureBox7.Image = global::PIM.Properties.Resources.gender;
-            this.pictureBox7.Location = new System.Drawing.Point(32, 376);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox7.TabIndex = 12;
-            this.pictureBox7.TabStop = false;
+            this.panel7.Controls.Add(this.btnPJ);
+            this.panel7.Controls.Add(this.btnPF);
+            this.panel7.Location = new System.Drawing.Point(0, 121);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(419, 39);
+            this.panel7.TabIndex = 16;
             // 
-            // pictureBox6
+            // btnPJ
             // 
-            this.pictureBox6.Image = global::PIM.Properties.Resources.birthday;
-            this.pictureBox6.Location = new System.Drawing.Point(32, 323);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox6.TabIndex = 12;
-            this.pictureBox6.TabStop = false;
+            this.btnPJ.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPJ.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPJ.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPJ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
+            this.btnPJ.Location = new System.Drawing.Point(206, 0);
+            this.btnPJ.Name = "btnPJ";
+            this.btnPJ.Size = new System.Drawing.Size(213, 39);
+            this.btnPJ.TabIndex = 1;
+            this.btnPJ.Text = "Pessoa Jurídica";
+            this.btnPJ.UseVisualStyleBackColor = true;
+            this.btnPJ.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnPJ_MouseClick);
             // 
-            // pictureBox5
+            // btnPF
             // 
-            this.pictureBox5.Image = global::PIM.Properties.Resources.consulta_cpf;
-            this.pictureBox5.Location = new System.Drawing.Point(32, 274);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 12;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PIM.Properties.Resources.mail;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 225);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(32, 177);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(32, 123);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
+            this.btnPF.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPF.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPF.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
+            this.btnPF.Location = new System.Drawing.Point(0, 0);
+            this.btnPF.Name = "btnPF";
+            this.btnPF.Size = new System.Drawing.Size(210, 39);
+            this.btnPF.TabIndex = 0;
+            this.btnPF.Text = "Pessoa Física";
+            this.btnPF.UseVisualStyleBackColor = true;
+            this.btnPF.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnPF_MouseClick);
             // 
             // btnVoltar
             // 
@@ -378,41 +184,54 @@
             this.btnVoltar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnVoltar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltar.Location = new System.Drawing.Point(11, 58);
+            this.btnVoltar.Location = new System.Drawing.Point(3, 44);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(32, 32);
             this.btnVoltar.TabIndex = 15;
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::PIM.Properties.Resources.icon;
+            this.pictureBox4.Location = new System.Drawing.Point(3, 4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelWinCustom_MouseDown);
+            this.pictureBox4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelWinCustom_MouseMove);
+            // 
+            // pjCadastroControl1
+            // 
+            this.pjCadastroControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.pjCadastroControl1.Location = new System.Drawing.Point(12, 166);
+            this.pjCadastroControl1.Name = "pjCadastroControl1";
+            this.pjCadastroControl1.Size = new System.Drawing.Size(344, 383);
+            this.pjCadastroControl1.TabIndex = 18;
+            // 
+            // pfCadastroControl1
+            // 
+            this.pfCadastroControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.pfCadastroControl1.Location = new System.Drawing.Point(12, 166);
+            this.pfCadastroControl1.Name = "pfCadastroControl1";
+            this.pfCadastroControl1.Size = new System.Drawing.Size(344, 400);
+            this.pfCadastroControl1.TabIndex = 17;
+            // 
             // formCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(366, 525);
+            this.ClientSize = new System.Drawing.Size(419, 644);
+            this.Controls.Add(this.pjCadastroControl1);
+            this.Controls.Add(this.pfCadastroControl1);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.txtSexo);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.txtNasc);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.txtCPF);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelWinCustom);
-            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.btnConfirmar);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.txtLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "formCadastro";
@@ -423,51 +242,27 @@
             this.Load += new System.EventHandler(this.formLogin_Load);
             this.panelWinCustom.ResumeLayout(false);
             this.panelWinCustom.PerformLayout();
+            this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbloginDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbaccountBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtLogin;
-        private System.Windows.Forms.TextBox txtSenha;
-        private dbloginDataSet dbloginDataSet;
-        private System.Windows.Forms.BindingSource tbaccountBindingSource;
-        private dbloginDataSetTableAdapters.tbaccountTableAdapter tbaccountTableAdapter;
-        private dbloginDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.Panel panelWinCustom;
         private System.Windows.Forms.Button minimizeButton;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button exitButton;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.TextBox txtCPF;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.TextBox txtNasc;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.TextBox txtSexo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button btnPJ;
+        private System.Windows.Forms.Button btnPF;
+        private PFCadastroControl pfCadastroControl1;
+        private PJCadastroControl pjCadastroControl1;
     }
 }
 

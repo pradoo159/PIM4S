@@ -39,3 +39,7 @@ C:\Users\emers\Source\Repos\PIM4S\PIM\obj\Debug\PIM.csproj.CoreCompileInputs.cac
 C:\Users\emers\Source\Repos\PIM4S\PIM\obj\Debug\PIM.csproj.CopyComplete
 C:\Users\emers\Source\Repos\PIM4S\PIM\obj\Debug\PIM.exe
 C:\Users\emers\Source\Repos\PIM4S\PIM\obj\Debug\PIM.pdb
+C:\Users\emers\source\repos\PIM4S\PIM\obj\Debug\PIM.PFCadastroControl.resources
+C:\Users\emers\source\repos\PIM4S\PIM\obj\Debug\PIM.PJCadastroControl.resources
+C:\Users\emers\source\repos\PIM4S\PIM\obj\Debug\PIM.PFLoginControl.resources
+C:\Users\emers\source\repos\PIM4S\PIM\obj\Debug\PIM.PJLoginControl.resources

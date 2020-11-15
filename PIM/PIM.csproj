@@ -88,8 +88,32 @@
     <Compile Include="formLogin.Designer.cs">
       <DependentUpon>formLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="PFLoginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PFLoginControl.Designer.cs">
+      <DependentUpon>PFLoginControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PJCadastroControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PJCadastroControl.Designer.cs">
+      <DependentUpon>PJCadastroControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PJLoginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PJLoginControl.Designer.cs">
+      <DependentUpon>PJLoginControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PFCadastroControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PFCadastroControl.Designer.cs">
+      <DependentUpon>PFCadastroControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="formHome.resx">
       <DependentUpon>formHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,6 +122,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PFCadastroControl.resx">
+      <DependentUpon>PFCadastroControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PFLoginControl.resx">
+      <DependentUpon>PFLoginControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PJCadastroControl.resx">
+      <DependentUpon>PJCadastroControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PJLoginControl.resx">
+      <DependentUpon>PJLoginControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -173,6 +209,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\back-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

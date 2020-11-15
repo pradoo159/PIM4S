@@ -17,11 +17,15 @@ namespace PIM
     {
         Thread nt;
         public Point mouseLocation;
+        private bool pessoaFisica;
 
 
         public formLogin()
         {
             InitializeComponent();
+            pfLoginControl1.BringToFront();
+            cadastroSelecionado(btnPF);
+            pessoaFisica = true;
         }
         private void formLogin_Load(object sender, EventArgs e)
         {
@@ -42,13 +46,19 @@ namespace PIM
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            String usuario = txtLogin.Text;
-            String senha = txtSenha.Text;
+            
             // Config da conexão
-            SqlConnection con = new SqlConnection("Data Source=ALFREDO-PC\\SQLEXPRESS;Initial Catalog=dbpim;User ID=sa;Password=admin123");
+            SqlConnection con = new SqlConnection("Data Source=ALFREDO-PC\\SQLEXPRESS;Initial Catalog=BDPIMEXPRESS;User ID=sa;Password=admin123");
 
+            String query;
             // QUERY PARA CONSULTAR OS DADOS
-            String query = "Select * from tblogin Where usuario = '" + txtLogin.Text.Trim() + "' and senha = '" + txtSenha.Text.Trim() + "'";
+            if (pessoaFisica)
+            {
+                query = "Select * from Login_pessoaFisica Where CPF = '" +pfLoginControl1.txtCPF.Text.Trim()+ "' and Login = '" + pfLoginControl1.txtLogin.Text.Trim() + "' and Senha = '" + pfLoginControl1.txtSenha.Text.Trim() + "'";
+            } else
+            {
+                query = "Select * from Login_pessoaJuridica where cnpj = '" + pjLoginControl1.txtCNPJ.Text.Trim() + "' and Login = '" + pjLoginControl1.txtLogin.Text.Trim() + "' and Senha = '" + pjLoginControl1.txtSenha.Text.Trim() + "'";
+            }
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             DataTable dtbl = new DataTable();
             sda.Fill(dtbl);
@@ -66,36 +76,7 @@ namespace PIM
             {
                 MessageBox.Show("Credenciais inválidas");
             }
-
-
-            /*  //query 
-              if (Convert.ToBoolean(this.tbaccountTableAdapter.FillByLogin(this.dbloginDataSet.tbaccount, usuario, senha)))
-              {
-              }
-              else
-              {
-                  MessageBox.Show("Credenciais inválidas");
-              }*/
-        }
-
-        private void limparLogin(object sender, MouseEventArgs e)
-        {
-            txtLogin.Clear();
-        }
-
-        private void limparSenha(object sender, MouseEventArgs e)
-        {
-            txtSenha.Clear();
-        }
-
-        private void limparSenhaTab(object sender, EventArgs e)
-        {
-            txtSenha.Clear();
-        }
-
-        private void esconderSenha(object sender, EventArgs e)
-        {
-            txtSenha.UseSystemPasswordChar = true;
+              
         }
 
         private void AlteraTextButton(object sender, EventArgs e)
@@ -151,20 +132,35 @@ namespace PIM
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void btnPJ_MouseClick(object sender, MouseEventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-30C2FUG\\SQLEXPRESS;Initial Catalog=bdpim;User ID=admin;Password=admin123");
-            con.Open();
-            SqlCommand cmd = new SqlCommand("insert into tbauth(usuario, senha) values ('" + txtLogin.Text + "', '" + txtSenha.Text + "')", con);
-            int i = cmd.ExecuteNonQuery();
-            if (i != 0)
-            {
-                MessageBox.Show("sucesso");
-            }
-            else
-            {
-                MessageBox.Show("Erro");
-            }
+            pjLoginControl1.BringToFront();
+            cadastroSelecionado(btnPJ);
+            pessoaFisica = false;
+            removerSelecao(btnPF);
         }
+
+        private void btnPF_MouseClick(object sender, MouseEventArgs e)
+        {
+            pfLoginControl1.BringToFront();
+            cadastroSelecionado(btnPF);
+            pessoaFisica = true;
+            removerSelecao(btnPJ);
+        }
+
+        static void cadastroSelecionado(Button botao)
+        {
+            botao.ForeColor = Color.White;
+            botao.BackColor = Color.FromArgb(66, 195, 207);
+            botao.FlatAppearance.BorderColor = Color.FromArgb(66, 195, 207);
+        }
+
+        static void removerSelecao(Button botao)
+        {
+            botao.ForeColor = Color.FromArgb(66, 195, 207);
+            botao.BackColor = Color.Transparent;
+        }
+
     }
 }

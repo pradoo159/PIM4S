@@ -28,12 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formLogin));
             this.btnConfirmar = new System.Windows.Forms.Button();
-            this.txtLogin = new System.Windows.Forms.TextBox();
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panelWinCustom = new System.Windows.Forms.Panel();
@@ -41,14 +36,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
             this.minimizeButton = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pfLoginControl1 = new PIM.PFLoginControl();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnPJ = new System.Windows.Forms.Button();
+            this.btnPF = new System.Windows.Forms.Button();
+            this.pjLoginControl1 = new PIM.PJLoginControl();
             this.panelWinCustom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnConfirmar
@@ -59,59 +56,13 @@
             this.btnConfirmar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
             this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmar.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.Location = new System.Drawing.Point(46, 344);
+            this.btnConfirmar.Location = new System.Drawing.Point(46, 423);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(280, 46);
             this.btnConfirmar.TabIndex = 3;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
-            // 
-            // txtLogin
-            // 
-            this.txtLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLogin.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLogin.ForeColor = System.Drawing.Color.White;
-            this.txtLogin.Location = new System.Drawing.Point(98, 216);
-            this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(227, 15);
-            this.txtLogin.TabIndex = 1;
-            this.txtLogin.Text = "Usuário";
-            this.txtLogin.MouseClick += new System.Windows.Forms.MouseEventHandler(this.limparLogin);
-            this.txtLogin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSenha_KeyDown);
-            this.txtLogin.Leave += new System.EventHandler(this.limparSenhaTab);
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSenha.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.ForeColor = System.Drawing.Color.White;
-            this.txtSenha.Location = new System.Drawing.Point(98, 270);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(227, 15);
-            this.txtSenha.TabIndex = 2;
-            this.txtSenha.Text = "Senha";
-            this.txtSenha.MouseClick += new System.Windows.Forms.MouseEventHandler(this.limparSenha);
-            this.txtSenha.TextChanged += new System.EventHandler(this.esconderSenha);
-            this.txtSenha.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSenha_KeyDown);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(98, 237);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(227, 1);
-            this.panel1.TabIndex = 9;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(98, 291);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(227, 1);
-            this.panel2.TabIndex = 10;
             // 
             // btnCadastrar
             // 
@@ -123,7 +74,7 @@
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(45, 461);
+            this.btnCadastrar.Location = new System.Drawing.Point(46, 497);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(280, 46);
             this.btnCadastrar.TabIndex = 11;
@@ -155,7 +106,7 @@
             this.panelWinCustom.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelWinCustom.Location = new System.Drawing.Point(0, 0);
             this.panelWinCustom.Name = "panelWinCustom";
-            this.panelWinCustom.Size = new System.Drawing.Size(366, 38);
+            this.panelWinCustom.Size = new System.Drawing.Size(368, 38);
             this.panelWinCustom.TabIndex = 13;
             this.panelWinCustom.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelWinCustom_MouseDown);
             this.panelWinCustom.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelWinCustom_MouseMove);
@@ -219,24 +170,6 @@
             this.minimizeButton.UseVisualStyleBackColor = true;
             this.minimizeButton.Click += new System.EventHandler(this.minimizeButton_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(45, 260);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(45, 206);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PIM.Properties.Resources.iconGreen2;
@@ -246,22 +179,74 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // pfLoginControl1
+            // 
+            this.pfLoginControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.pfLoginControl1.Location = new System.Drawing.Point(12, 240);
+            this.pfLoginControl1.Name = "pfLoginControl1";
+            this.pfLoginControl1.Size = new System.Drawing.Size(318, 177);
+            this.pfLoginControl1.TabIndex = 14;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.btnPJ);
+            this.panel7.Controls.Add(this.btnPF);
+            this.panel7.Location = new System.Drawing.Point(3, 195);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(365, 39);
+            this.panel7.TabIndex = 17;
+            // 
+            // btnPJ
+            // 
+            this.btnPJ.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPJ.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPJ.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPJ.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
+            this.btnPJ.Location = new System.Drawing.Point(181, 0);
+            this.btnPJ.Name = "btnPJ";
+            this.btnPJ.Size = new System.Drawing.Size(184, 39);
+            this.btnPJ.TabIndex = 1;
+            this.btnPJ.Text = "Pessoa Jurídica";
+            this.btnPJ.UseVisualStyleBackColor = true;
+            this.btnPJ.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnPJ_MouseClick);
+            // 
+            // btnPF
+            // 
+            this.btnPF.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPF.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPF.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
+            this.btnPF.Location = new System.Drawing.Point(0, 0);
+            this.btnPF.Name = "btnPF";
+            this.btnPF.Size = new System.Drawing.Size(182, 39);
+            this.btnPF.TabIndex = 0;
+            this.btnPF.Text = "Pessoa Física";
+            this.btnPF.UseVisualStyleBackColor = true;
+            this.btnPF.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnPF_MouseClick);
+            // 
+            // pjLoginControl1
+            // 
+            this.pjLoginControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.pjLoginControl1.Location = new System.Drawing.Point(12, 240);
+            this.pjLoginControl1.Name = "pjLoginControl1";
+            this.pjLoginControl1.Size = new System.Drawing.Size(318, 177);
+            this.pjLoginControl1.TabIndex = 18;
+            // 
             // formLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(366, 525);
+            this.ClientSize = new System.Drawing.Size(368, 562);
+            this.Controls.Add(this.pjLoginControl1);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.pfLoginControl1);
             this.Controls.Add(this.panelWinCustom);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.btnConfirmar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -274,9 +259,8 @@
             this.panelWinCustom.ResumeLayout(false);
             this.panelWinCustom.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,13 +269,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnConfirmar;
-        private System.Windows.Forms.TextBox txtLogin;
-        private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelWinCustom;
@@ -299,6 +277,11 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button exitButton;
+        private PFLoginControl pfLoginControl1;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button btnPJ;
+        private System.Windows.Forms.Button btnPF;
+        private PJLoginControl pjLoginControl1;
     }
 }
 
