@@ -71,6 +71,11 @@ namespace PIM
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
+            VoltarParaLogin();
+        }
+
+        private void VoltarParaLogin()
+        {
             formLogin login = new formLogin();
             nt = new Thread(novoFormLogin);
             nt.SetApartmentState(ApartmentState.STA);
@@ -114,7 +119,7 @@ namespace PIM
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=ALFREDO-PC\\SQLEXPRESS;Initial Catalog=BDPIMEXPRESS;User ID=sa;Password=admin123");
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-MAO1FRB\\SQLEXPRESS;Initial Catalog=BDPIMEXPRESS;User ID=sa;Password=admin123");
             con.Open();
             SqlCommand cmd;
             if (pessoaFisica)
@@ -127,14 +132,21 @@ namespace PIM
                 cmd = new SqlCommand("insert into Pessoa_juridica(Nome_Usuario, CNPJ, email_PJ, Telefone, Data_nasc, login, senha) values ('" + pjCadastroControl1.txtNome.Text + "', '" + pjCadastroControl1.txtCNPJ.Text + "', " +
                     "'" + pjCadastroControl1.txtEmail.Text + "', '" + pjCadastroControl1.txtTelefone.Text + "', '" + pjCadastroControl1.txtDataNasc.Text + "', '" + pjCadastroControl1.txtUsusario.Text + "', '" + pjCadastroControl1.txtSenha.Text + "')", con);
             }
-            int i = cmd.ExecuteNonQuery();
-            if (i != 0)
+            try
             {
-                MessageBox.Show("sucesso");
-            }
-            else
+                int i = cmd.ExecuteNonQuery();
+                if (i != 0)
+                {
+                    MessageBox.Show("sucesso");
+                    VoltarParaLogin();
+                }
+                else
+                {
+                    MessageBox.Show("Erro");
+                }
+            }catch(Exception ex)
             {
-                MessageBox.Show("Erro");
+                MessageBox.Show("Erro ao realizar o cadastro.");
             }
         }
     }
