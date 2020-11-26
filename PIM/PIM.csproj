@@ -44,6 +44,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,6 +58,24 @@
     <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="carteiraInvestimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carteiraInvestimento.Designer.cs">
+      <DependentUpon>carteiraInvestimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComprarBitcoins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComprarBitcoins.Designer.cs">
+      <DependentUpon>ComprarBitcoins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComprarMoedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComprarMoedas.Designer.cs">
+      <DependentUpon>ComprarMoedas.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbloginDataSet.cs">
       <DependentUpon>dbloginDataSet.xsd</DependentUpon>
     </Compile>
@@ -69,6 +88,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dbloginDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ControleLiquidacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControleLiquidacao.Designer.cs">
+      <DependentUpon>ControleLiquidacao.cs</DependentUpon>
     </Compile>
     <Compile Include="formHome.cs">
       <SubType>Form</SubType>
@@ -106,7 +131,6 @@
     <Compile Include="PJLoginControl.Designer.cs">
       <DependentUpon>PJLoginControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PFCadastroControl.cs">
       <SubType>UserControl</SubType>
@@ -114,6 +138,38 @@
     <Compile Include="PFCadastroControl.Designer.cs">
       <DependentUpon>PFCadastroControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Rentabilidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rentabilidade.Designer.cs">
+      <DependentUpon>Rentabilidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendas.Designer.cs">
+      <DependentUpon>Vendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeBroker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeBroker.Designer.cs">
+      <DependentUpon>HomeBroker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="carteiraInvestimento.resx">
+      <DependentUpon>carteiraInvestimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComprarBitcoins.resx">
+      <DependentUpon>ComprarBitcoins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComprarMoedas.resx">
+      <DependentUpon>ComprarMoedas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControleLiquidacao.resx">
+      <DependentUpon>ControleLiquidacao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formHome.resx">
       <DependentUpon>formHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +190,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PJLoginControl.resx">
       <DependentUpon>PJLoginControl.cs</DependentUpon>
+    <EmbeddedResource Include="Rentabilidade.resx">
+      <DependentUpon>Rentabilidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendas.resx">
+      <DependentUpon>Vendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeBroker.resx">
+      <DependentUpon>HomeBroker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

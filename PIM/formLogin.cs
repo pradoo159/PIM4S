@@ -9,7 +9,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+<<<<<<< HEAD
 using System.Diagnostics;
+=======
+>>>>>>> leo
 
 namespace PIM
 {
@@ -63,6 +66,20 @@ namespace PIM
             DataTable dtbl = new DataTable();
             sda.Fill(dtbl);
 
+<<<<<<< HEAD
+=======
+            // Config da conexão
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-76HMS08\\SQLEXPRESS;Initial Catalog=dbpim;Persist Security Info=True;User ID=sa;Password=leo123");
+            con.Open();
+
+
+            // QUERY PARA CONSULTAR OS DADOS
+            String query = "Select * from tblogin Where usuario = '" + txtLogin.Text.Trim() + "' and senha = '" + txtSenha.Text.Trim() + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            DataTable dtbl = new DataTable();
+            _ = sda.Fill(dtbl);
+
+>>>>>>> leo
             // LÓGICA DE LOGIN
             if (dtbl.Rows.Count == 1)
             {
@@ -92,11 +109,26 @@ namespace PIM
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             formCadastro cadastro = new formCadastro();
             nt = new Thread(novoFormCadastro);
             nt.SetApartmentState(ApartmentState.STA);
             nt.Start();
             this.Close();
+=======
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-76HMS08\\SQLEXPRESS;Initial Catalog=dbpim;Persist Security Info=True;User ID=sa;Password=leo123");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("insert into tblogin(usuario, senha) values ('" + txtLogin.Text + "', '" + txtSenha.Text + "')", con);
+            int i = cmd.ExecuteNonQuery();
+            if (i != 0)
+            {
+                MessageBox.Show("sucesso");
+            }
+            else
+            {
+                MessageBox.Show("Erro");
+            }
+>>>>>>> leo
         }
 
         private void exitButton_Click(object sender, EventArgs e)
