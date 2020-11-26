@@ -17,25 +17,59 @@ namespace PIM
             InitializeComponent();
         }
 
+        private void txtCPF_Enter(object sender, EventArgs e)
+        {
+            if (txtCPF.Text == "CPF")
+            {
+                removerTexto(txtCPF);
+            }
+        }
+
+        private void txtCPF_Leave(object sender, EventArgs e)
+        {
+            if (txtCPF.Text == "")
+            {
+                txtCPF.Text = "CPF";
+            }
+        }
+
+        private void txtUsuario_Enter(object sender, EventArgs e)
+        {
+            if (txtLogin.Text == "Usuário")
+            {
+                removerTexto(txtLogin);
+            }
+        }
+
+        private void txtUsuario_Leave(object sender, EventArgs e)
+        {
+            if (txtLogin.Text == "")
+            {
+                txtLogin.Text = "Usuário";
+            }
+        }
+
+        private void txtSenha_Enter(object sender, EventArgs e)
+        {
+            if (txtSenha.Text == "Senha")
+            {
+                removerTexto(txtSenha);
+                txtSenha.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void txtSenha_Leave(object sender, EventArgs e)
+        {
+            if (txtSenha.Text == "")
+            {
+                txtSenha.UseSystemPasswordChar = false;
+                txtSenha.Text = "Senha";
+            }
+        }
+
         static void removerTexto(TextBox textBox)
         {
             textBox.Text = "";
-        }
-
-        private void txtCPF_Click(object sender, EventArgs e)
-        {
-            removerTexto(txtCPF);
-        }
-
-        private void txtLogin_Click(object sender, EventArgs e)
-        {
-            removerTexto(txtLogin);
-        }
-
-        private void txtSenha_Click(object sender, EventArgs e)
-        {
-            removerTexto(txtSenha);
-            txtSenha.UseSystemPasswordChar = true;
         }
     }
 }
