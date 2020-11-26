@@ -46,15 +46,8 @@ C:\Users\emers\source\repos\PIM4S\PIM\obj\Debug\PIM.PJLoginControl.resources
 D:\Nene\PIM\PIM\bin\Debug\PIM.exe.config
 D:\Nene\PIM\PIM\bin\Debug\PIM.exe
 D:\Nene\PIM\PIM\bin\Debug\PIM.pdb
-D:\Nene\PIM\PIM\bin\Debug\System.Memory.dll
-D:\Nene\PIM\PIM\bin\Debug\K4os.Compression.LZ4.dll
-D:\Nene\PIM\PIM\bin\Debug\K4os.Hash.xxHash.dll
 D:\Nene\PIM\PIM\bin\Debug\System.Buffers.dll
-D:\Nene\PIM\PIM\bin\Debug\System.Numerics.Vectors.dll
-D:\Nene\PIM\PIM\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-D:\Nene\PIM\PIM\bin\Debug\MySql.Data.xml
 D:\Nene\PIM\PIM\obj\Debug\PIM.csprojAssemblyReference.cache
-D:\Nene\PIM\PIM\obj\Debug\PIM.exe.config
 D:\Nene\PIM\PIM\obj\Debug\PIM.formHome.resources
 D:\Nene\PIM\PIM\obj\Debug\PIM.formCadastro.resources
 D:\Nene\PIM\PIM\obj\Debug\PIM.formLogin.resources
