@@ -17,7 +17,6 @@ C:\Users\ALFREDO\source\repos\PIM\PIM\bin\Debug\MySql.Data.xml
 C:\Users\ALFREDO\source\repos\PIM\PIM\obj\Debug\PIM.exe.config
 C:\Users\ALFREDO\source\repos\PIM\PIM\obj\Debug\PIM.csproj.CopyComplete
 C:\Users\ALFREDO\source\repos\PIM\PIM\obj\Debug\PIM.formHome.resources
-<<<<<<< HEAD
 C:\Users\ALFREDO\source\repos\PIM\PIM\obj\Debug\PIM.formCadastro.resources
 C:\Users\emers\Source\Repos\PIM4S\PIM\bin\Debug\PIM.exe.config
 C:\Users\emers\Source\Repos\PIM4S\PIM\bin\Debug\PIM.exe
@@ -62,31 +61,10 @@ D:\Nene\PIM\PIM\obj\Debug\PIM.csproj.CoreCompileInputs.cache
 D:\Nene\PIM\PIM\obj\Debug\PIM.csproj.CopyComplete
 D:\Nene\PIM\PIM\obj\Debug\PIM.exe
 D:\Nene\PIM\PIM\obj\Debug\PIM.pdb
-=======
-C:\Users\Léo\Source\Repos\PIM4S\PIM\bin\Debug\PIM.exe.config
-C:\Users\Léo\Source\Repos\PIM4S\PIM\bin\Debug\PIM.exe
-C:\Users\Léo\Source\Repos\PIM4S\PIM\bin\Debug\PIM.pdb
-C:\Users\Léo\Source\Repos\PIM4S\PIM\bin\Debug\System.Memory.dll
-C:\Users\Léo\Source\Repos\PIM4S\PIM\bin\Debug\K4os.Compression.LZ4.dll
-C:\Users\Léo\Source\Repos\PIM4S\PIM\bin\Debug\K4os.Hash.xxHash.dll
-C:\Users\Léo\Source\Repos\PIM4S\PIM\bin\Debug\System.Buffers.dll
-C:\Users\Léo\Source\Repos\PIM4S\PIM\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\Léo\Source\Repos\PIM4S\PIM\bin\Debug\MySql.Data.xml
-C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.csprojAssemblyReference.cache
-C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.exe.config
-C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.formHome.resources
-C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.formLogin.resources
-C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.Properties.Resources.resources
-C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.csproj.GenerateResource.cache
-C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.csproj.CoreCompileInputs.cache
-C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.csproj.CopyComplete
-C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.exe
-C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.pdb
-C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.HomeBroker.resources
-C:\Users\Léo\source\repos\PIM4S\PIM\obj\Debug\PIM.carteiraInvestimento.resources
-C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.controleLiquidacao.resources
-C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.rentabilidade.resources
-C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.ComprarBitcoins.resources
-C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.ComprarMoedas.resources
-C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.Vendas.resources
->>>>>>> leo
+D:\Nene\PIM\PIM\obj\Debug\PIM.carteiraInvestimento.resources
+D:\Nene\PIM\PIM\obj\Debug\PIM.ComprarBitcoins.resources
+D:\Nene\PIM\PIM\obj\Debug\PIM.ComprarMoedas.resources
+D:\Nene\PIM\PIM\obj\Debug\PIM.ControleLiquidacao.resources
+D:\Nene\PIM\PIM\obj\Debug\PIM.Rentabilidade.resources
+D:\Nene\PIM\PIM\obj\Debug\PIM.Vendas.resources
+D:\Nene\PIM\PIM\obj\Debug\PIM.HomeBroker.resources

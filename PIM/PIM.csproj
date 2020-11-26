@@ -190,6 +190,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PJLoginControl.resx">
       <DependentUpon>PJLoginControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Rentabilidade.resx">
       <DependentUpon>Rentabilidade.cs</DependentUpon>
     </EmbeddedResource>
