@@ -44,3 +44,9 @@ C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.csproj.CopyComplete
 C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.exe
 C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.pdb
 C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.HomeBroker.resources
+C:\Users\Léo\source\repos\PIM4S\PIM\obj\Debug\PIM.carteiraInvestimento.resources
+C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.controleLiquidacao.resources
+C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.rentabilidade.resources
+C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.ComprarBitcoins.resources
+C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.ComprarMoedas.resources
+C:\Users\Léo\Source\Repos\PIM4S\PIM\obj\Debug\PIM.Vendas.resources

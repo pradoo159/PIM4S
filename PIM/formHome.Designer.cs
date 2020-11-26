@@ -38,11 +38,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
             this.label1.Location = new System.Drawing.Point(229, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 31);
+            this.label1.Size = new System.Drawing.Size(95, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "HOME";
             // 

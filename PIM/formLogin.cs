@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace PIM
 {
@@ -47,8 +48,19 @@ namespace PIM
             String usuario = txtLogin.Text;
             String senha = txtSenha.Text;
 
-            //query 
-            if(Convert.ToBoolean(this.tbaccountTableAdapter.FillByLogin(this.dbloginDataSet.tbaccount, usuario, senha)))
+            // Config da conexão
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-76HMS08\\SQLEXPRESS;Initial Catalog=dbpim;Persist Security Info=True;User ID=sa;Password=leo123");
+            con.Open();
+
+
+            // QUERY PARA CONSULTAR OS DADOS
+            String query = "Select * from tblogin Where usuario = '" + txtLogin.Text.Trim() + "' and senha = '" + txtSenha.Text.Trim() + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            DataTable dtbl = new DataTable();
+            _ = sda.Fill(dtbl);
+
+            // LÓGICA DE LOGIN
+            if (dtbl.Rows.Count == 1)
             {
                 formHome home = new formHome();
                 nt = new Thread(novoForm);
@@ -95,7 +107,18 @@ namespace PIM
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-
+            SqlConnection con = new SqlConnection("Data Source=DESKTOP-76HMS08\\SQLEXPRESS;Initial Catalog=dbpim;Persist Security Info=True;User ID=sa;Password=leo123");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("insert into tblogin(usuario, senha) values ('" + txtLogin.Text + "', '" + txtSenha.Text + "')", con);
+            int i = cmd.ExecuteNonQuery();
+            if (i != 0)
+            {
+                MessageBox.Show("sucesso");
+            }
+            else
+            {
+                MessageBox.Show("Erro");
+            }
         }
 
         private void exitButton_Click(object sender, EventArgs e)
