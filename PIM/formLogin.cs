@@ -55,9 +55,11 @@ namespace PIM
             if (pessoaFisica)
             {
                 query = "Select * from Login_pessoaFisica Where CPF = '" +pfLoginControl1.txtCPF.Text.Trim()+ "' and Login = '" + pfLoginControl1.txtLogin.Text.Trim() + "' and Senha = '" + pfLoginControl1.txtSenha.Text.Trim() + "'";
+                Auxiliar.CPF = pfLoginControl1.txtCPF.Text.Trim();
             } else
             {
                 query = "Select * from Login_pessoaJuridica where cnpj = '" + pjLoginControl1.txtCNPJ.Text.Trim() + "' and Login = '" + pjLoginControl1.txtLogin.Text.Trim() + "' and Senha = '" + pjLoginControl1.txtSenha.Text.Trim() + "'";
+                Auxiliar.CNPJ = pjLoginControl1.txtCNPJ.Text.Trim();
             }
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             DataTable dtbl = new DataTable();

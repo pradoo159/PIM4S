@@ -64,7 +64,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.Location = new System.Drawing.Point(127, 316);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(303, 1);
             this.panel6.TabIndex = 49;
@@ -73,7 +73,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Location = new System.Drawing.Point(127, 411);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(303, 1);
             this.panel5.TabIndex = 47;
@@ -85,10 +85,10 @@
             this.txtTelefone.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefone.ForeColor = System.Drawing.Color.White;
             this.txtTelefone.Location = new System.Drawing.Point(127, 290);
-            this.txtTelefone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefone.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(303, 19);
-            this.txtTelefone.TabIndex = 6;
+            this.txtTelefone.Size = new System.Drawing.Size(303, 15);
+            this.txtTelefone.TabIndex = 5;
             this.txtTelefone.Text = "Telefone";
             this.txtTelefone.Enter += new System.EventHandler(this.txtTelefone_Enter);
             this.txtTelefone.Leave += new System.EventHandler(this.txtTelefone_Leave);
@@ -97,7 +97,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Location = new System.Drawing.Point(127, 258);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(303, 1);
             this.panel4.TabIndex = 48;
@@ -109,10 +109,10 @@
             this.txtUsusario.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsusario.ForeColor = System.Drawing.Color.White;
             this.txtUsusario.Location = new System.Drawing.Point(127, 385);
-            this.txtUsusario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsusario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsusario.Name = "txtUsusario";
-            this.txtUsusario.Size = new System.Drawing.Size(303, 19);
-            this.txtUsusario.TabIndex = 5;
+            this.txtUsusario.Size = new System.Drawing.Size(303, 15);
+            this.txtUsusario.TabIndex = 6;
             this.txtUsusario.Text = "Usuário";
             this.txtUsusario.Enter += new System.EventHandler(this.txtLogin_Enter);
             this.txtUsusario.Leave += new System.EventHandler(this.txtLogin_Leave);
@@ -121,7 +121,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Location = new System.Drawing.Point(127, 198);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(303, 1);
             this.panel3.TabIndex = 46;
@@ -133,10 +133,10 @@
             this.txtCNPJ.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCNPJ.ForeColor = System.Drawing.Color.White;
             this.txtCNPJ.Location = new System.Drawing.Point(127, 233);
-            this.txtCNPJ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCNPJ.Margin = new System.Windows.Forms.Padding(4);
             this.txtCNPJ.MaxLength = 14;
             this.txtCNPJ.Name = "txtCNPJ";
-            this.txtCNPJ.Size = new System.Drawing.Size(303, 19);
+            this.txtCNPJ.Size = new System.Drawing.Size(303, 15);
             this.txtCNPJ.TabIndex = 4;
             this.txtCNPJ.Text = "CNPJ (apenas números)";
             this.txtCNPJ.Enter += new System.EventHandler(this.txtCNPJ_Enter);
@@ -149,9 +149,9 @@
             this.txtEmail.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.White;
             this.txtEmail.Location = new System.Drawing.Point(127, 172);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(303, 19);
+            this.txtEmail.Size = new System.Drawing.Size(303, 15);
             this.txtEmail.TabIndex = 3;
             this.txtEmail.Text = "Email";
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
@@ -161,7 +161,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Location = new System.Drawing.Point(127, 470);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(303, 1);
             this.panel2.TabIndex = 37;
@@ -170,7 +170,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(127, 73);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(303, 1);
             this.panel1.TabIndex = 36;
@@ -182,10 +182,10 @@
             this.txtSenha.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.ForeColor = System.Drawing.Color.White;
             this.txtSenha.Location = new System.Drawing.Point(127, 444);
-            this.txtSenha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(4);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(303, 19);
-            this.txtSenha.TabIndex = 2;
+            this.txtSenha.Size = new System.Drawing.Size(303, 15);
+            this.txtSenha.TabIndex = 7;
             this.txtSenha.Text = "Senha";
             this.txtSenha.Enter += new System.EventHandler(this.txtSenha_Enter);
             this.txtSenha.Leave += new System.EventHandler(this.txtSenha_Leave);
@@ -197,9 +197,9 @@
             this.txtNome.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.ForeColor = System.Drawing.Color.White;
             this.txtNome.Location = new System.Drawing.Point(127, 47);
-            this.txtNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(303, 19);
+            this.txtNome.Size = new System.Drawing.Size(303, 15);
             this.txtNome.TabIndex = 1;
             this.txtNome.Text = "Nome Completo";
             this.txtNome.Enter += new System.EventHandler(this.txtNome_Enter);
@@ -209,7 +209,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.Location = new System.Drawing.Point(127, 132);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(303, 1);
             this.panel7.TabIndex = 50;
@@ -221,10 +221,10 @@
             this.txtDataNasc.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDataNasc.ForeColor = System.Drawing.Color.White;
             this.txtDataNasc.Location = new System.Drawing.Point(127, 106);
-            this.txtDataNasc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDataNasc.Margin = new System.Windows.Forms.Padding(4);
             this.txtDataNasc.Name = "txtDataNasc";
-            this.txtDataNasc.Size = new System.Drawing.Size(303, 19);
-            this.txtDataNasc.TabIndex = 48;
+            this.txtDataNasc.Size = new System.Drawing.Size(303, 15);
+            this.txtDataNasc.TabIndex = 2;
             this.txtDataNasc.Text = "Data de nascimento";
             this.txtDataNasc.Enter += new System.EventHandler(this.txtDataNasc_Enter);
             this.txtDataNasc.Leave += new System.EventHandler(this.txtDataNasc_Leave);
@@ -233,7 +233,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.Location = new System.Drawing.Point(0, 352);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(460, 1);
             this.panel8.TabIndex = 50;
@@ -242,7 +242,7 @@
             // 
             this.pictureBox4.Image = global::PIM.Properties.Resources.birthday;
             this.pictureBox4.Location = new System.Drawing.Point(56, 94);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(43, 39);
             this.pictureBox4.TabIndex = 49;
@@ -252,7 +252,7 @@
             // 
             this.pictureBox7.Image = global::PIM.Properties.Resources.phone;
             this.pictureBox7.Location = new System.Drawing.Point(56, 278);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(43, 39);
             this.pictureBox7.TabIndex = 42;
@@ -262,7 +262,7 @@
             // 
             this.pictureBox6.Image = global::PIM.Properties.Resources.user;
             this.pictureBox6.Location = new System.Drawing.Point(56, 373);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(43, 39);
             this.pictureBox6.TabIndex = 43;
@@ -272,7 +272,7 @@
             // 
             this.pictureBox5.Image = global::PIM.Properties.Resources.consulta_cpf;
             this.pictureBox5.Location = new System.Drawing.Point(56, 220);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(43, 39);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -283,7 +283,7 @@
             // 
             this.pictureBox1.Image = global::PIM.Properties.Resources.mail;
             this.pictureBox1.Location = new System.Drawing.Point(56, 160);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(43, 39);
             this.pictureBox1.TabIndex = 45;
@@ -293,7 +293,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(56, 432);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(43, 39);
             this.pictureBox3.TabIndex = 35;
@@ -303,7 +303,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(56, 34);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(43, 39);
             this.pictureBox2.TabIndex = 34;
@@ -336,7 +336,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtNome);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PJCadastroControl";
             this.Size = new System.Drawing.Size(459, 471);
             this.Load += new System.EventHandler(this.PJCadastroControl_Load);

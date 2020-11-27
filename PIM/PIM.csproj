@@ -58,6 +58,7 @@
     <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Auxiliar.cs" />
     <Compile Include="carteiraInvestimento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +113,18 @@
     </Compile>
     <Compile Include="formLogin.Designer.cs">
       <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvestimentoBitcoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvestimentoBitcoin.Designer.cs">
+      <DependentUpon>InvestimentoBitcoin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InvestimentosHomeBroker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvestimentosHomeBroker.Designer.cs">
+      <DependentUpon>InvestimentosHomeBroker.cs</DependentUpon>
     </Compile>
     <Compile Include="PFLoginControl.cs">
       <SubType>UserControl</SubType>
@@ -178,6 +191,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvestimentoBitcoin.resx">
+      <DependentUpon>InvestimentoBitcoin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvestimentosHomeBroker.resx">
+      <DependentUpon>InvestimentosHomeBroker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PFCadastroControl.resx">
       <DependentUpon>PFCadastroControl.cs</DependentUpon>
@@ -277,6 +296,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bitcoin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bitcoin %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

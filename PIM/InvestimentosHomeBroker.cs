@@ -5,22 +5,30 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Threading;
 using System.Data.SqlClient;
+using System.Diagnostics;
+using System.Data.Common;
 
 namespace PIM
 {
-    public partial class carteiraInvestimento : Form
+    public partial class InvestimentosHomeBroker : Form
     {
 
         Thread nt;
-        private float valorSaldo = 0f;
+        float valorInvestimento = 0f;
 
-        public carteiraInvestimento()
+        private void novoForm()
+        {
+            Application.Run(new HomeBroker());
+        }
+
+        public InvestimentosHomeBroker()
         {
             InitializeComponent();
+            // Config da conexão
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-MAO1FRB\\SQLEXPRESS;Initial Catalog=BDPIMEXPRESS;User ID=sa;Password=admin123");
             try
             {
@@ -35,11 +43,11 @@ namespace PIM
 
             if (Auxiliar.CPF != "")
             {
-                cmd = new SqlCommand("select * from Carteira_Investimento where CPF='" + Auxiliar.CPF + "'", con);
+                cmd = new SqlCommand("select SUM(Valor_investimento) from Home_Broker_Cliente where CPF='" + Auxiliar.CPF + "'", con);
             }
             else
             {
-                cmd = new SqlCommand("select * from Carteira_Investimento where CNPJ='" + Auxiliar.CNPJ + "'", con);
+                cmd = new SqlCommand("select SUM(Valor_investimento) from Home_Broker_Cliente where CNPJ='" + Auxiliar.CNPJ + "'", con);
             }
 
             SqlDataReader dr = cmd.ExecuteReader();
@@ -50,42 +58,38 @@ namespace PIM
                 dr.Read();
                 try
                 {
-                    valorSaldo = float.Parse(dr["Saldo"].ToString());
+                    valorInvestimento = float.Parse(dr[""].ToString());
                 }
                 catch (System.FormatException fmtE)
                 {
-                    txtSaldoConta.Text = "R$0,00";
+                    txtValorInvestido.Text = "R$0,00";
                 }
             }
 
-            txtSaldoConta.Text = "R$" + valorSaldo + ",00";
+            txtValorInvestido.Text = "R$" + valorInvestimento + ",00";
 
             con.Close();
         }
-        private void formRentabilidade()
+
+
+        private void investirBitcoin()
         {
-            Application.Run(new Rentabilidade());
+            Application.Run(new InvestimentoBitcoin());
         }
 
-        private void formHome()
+        private void button2_Click(object sender, EventArgs e)
         {
-            Application.Run(new formHome());
+            InvestimentoBitcoin bitcoin = new InvestimentoBitcoin();
+            nt = new Thread(investirBitcoin);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+            this.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Voltar()
         {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnRentabilidade_Click(object sender, EventArgs e)
-        {
-            Rentabilidade rentabilidade = new Rentabilidade();
-            nt = new Thread(formRentabilidade);
+            HomeBroker homeBroker = new HomeBroker();
+            nt = new Thread(novoForm);
             nt.SetApartmentState(ApartmentState.STA);
             nt.Start();
             this.Close();
@@ -93,11 +97,7 @@ namespace PIM
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            formHome home = new formHome();
-            nt = new Thread(formHome);
-            nt.SetApartmentState(ApartmentState.STA);
-            nt.Start();
-            this.Close();
+            Voltar();
         }
     }
 }

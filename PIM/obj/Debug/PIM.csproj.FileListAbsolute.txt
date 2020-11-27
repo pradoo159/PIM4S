@@ -68,3 +68,5 @@ D:\Nene\PIM\PIM\obj\Debug\PIM.ControleLiquidacao.resources
 D:\Nene\PIM\PIM\obj\Debug\PIM.Rentabilidade.resources
 D:\Nene\PIM\PIM\obj\Debug\PIM.Vendas.resources
 D:\Nene\PIM\PIM\obj\Debug\PIM.HomeBroker.resources
+D:\Nene\PIM\PIM\obj\Debug\PIM.InvestimentosHomeBroker.resources
+D:\Nene\PIM\PIM\obj\Debug\PIM.InvestimentoBitcoin.resources

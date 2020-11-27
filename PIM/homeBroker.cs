@@ -29,9 +29,18 @@ namespace PIM
             Application.Run(new ComprarMoedas());
         }
 
+        private void novoFormInvestimentos()
+        {
+            Application.Run(new InvestimentosHomeBroker());
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-
+            InvestimentosHomeBroker investimentosHomeBroker = new InvestimentosHomeBroker();
+            nt = new Thread(novoFormInvestimentos);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+            this.Close();
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -45,7 +54,7 @@ namespace PIM
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(Auxiliar.CPF);
         }
 
         private void button4_Click(object sender, EventArgs e)
