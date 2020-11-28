@@ -51,7 +51,8 @@ namespace PIM
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(85, 36);
+            this.label3.Location = new System.Drawing.Point(64, 29);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(280, 37);
             this.label3.TabIndex = 2;
@@ -65,10 +66,9 @@ namespace PIM
             this.btnConfirmar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
             this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmar.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar.Location = new System.Drawing.Point(149, 532);
-            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnConfirmar.Location = new System.Drawing.Point(112, 432);
             this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(303, 57);
+            this.btnConfirmar.Size = new System.Drawing.Size(227, 46);
             this.btnConfirmar.TabIndex = 18;
             this.btnConfirmar.Text = "Investir";
             this.btnConfirmar.UseVisualStyleBackColor = false;
@@ -77,7 +77,8 @@ namespace PIM
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PIM.Properties.Resources.bitcoin__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(509, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(382, 17);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 64);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -90,11 +91,13 @@ namespace PIM
             this.txtValor.BackColor = System.Drawing.Color.Transparent;
             this.txtValor.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtValor.ForeColor = System.Drawing.Color.White;
-            this.txtValor.Location = new System.Drawing.Point(97, 124);
+            this.txtValor.Location = new System.Drawing.Point(73, 101);
+            this.txtValor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(94, 37);
             this.txtValor.TabIndex = 20;
             this.txtValor.Text = "Valor: ";
+            this.txtValor.Click += new System.EventHandler(this.txtValor_Click);
             // 
             // addUm
             // 
@@ -104,10 +107,9 @@ namespace PIM
             this.addUm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
             this.addUm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addUm.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addUm.Location = new System.Drawing.Point(345, 214);
-            this.addUm.Margin = new System.Windows.Forms.Padding(4);
+            this.addUm.Location = new System.Drawing.Point(259, 174);
             this.addUm.Name = "addUm";
-            this.addUm.Size = new System.Drawing.Size(162, 57);
+            this.addUm.Size = new System.Drawing.Size(122, 46);
             this.addUm.TabIndex = 21;
             this.addUm.Text = "R$ +1";
             this.addUm.UseVisualStyleBackColor = false;
@@ -121,10 +123,9 @@ namespace PIM
             this.addDez.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
             this.addDez.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addDez.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addDez.Location = new System.Drawing.Point(345, 290);
-            this.addDez.Margin = new System.Windows.Forms.Padding(4);
+            this.addDez.Location = new System.Drawing.Point(259, 236);
             this.addDez.Name = "addDez";
-            this.addDez.Size = new System.Drawing.Size(162, 57);
+            this.addDez.Size = new System.Drawing.Size(122, 46);
             this.addDez.TabIndex = 22;
             this.addDez.Text = "R$ +10";
             this.addDez.UseVisualStyleBackColor = false;
@@ -138,10 +139,9 @@ namespace PIM
             this.addCem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
             this.addCem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addCem.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addCem.Location = new System.Drawing.Point(345, 364);
-            this.addCem.Margin = new System.Windows.Forms.Padding(4);
+            this.addCem.Location = new System.Drawing.Point(259, 296);
             this.addCem.Name = "addCem";
-            this.addCem.Size = new System.Drawing.Size(162, 57);
+            this.addCem.Size = new System.Drawing.Size(122, 46);
             this.addCem.TabIndex = 23;
             this.addCem.Text = "R$ +100";
             this.addCem.UseVisualStyleBackColor = false;
@@ -155,10 +155,9 @@ namespace PIM
             this.rmCem.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
             this.rmCem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rmCem.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rmCem.Location = new System.Drawing.Point(104, 364);
-            this.rmCem.Margin = new System.Windows.Forms.Padding(4);
+            this.rmCem.Location = new System.Drawing.Point(78, 296);
             this.rmCem.Name = "rmCem";
-            this.rmCem.Size = new System.Drawing.Size(162, 57);
+            this.rmCem.Size = new System.Drawing.Size(122, 46);
             this.rmCem.TabIndex = 26;
             this.rmCem.Text = "R$ -100";
             this.rmCem.UseVisualStyleBackColor = false;
@@ -172,10 +171,9 @@ namespace PIM
             this.rmDez.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
             this.rmDez.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rmDez.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rmDez.Location = new System.Drawing.Point(104, 290);
-            this.rmDez.Margin = new System.Windows.Forms.Padding(4);
+            this.rmDez.Location = new System.Drawing.Point(78, 236);
             this.rmDez.Name = "rmDez";
-            this.rmDez.Size = new System.Drawing.Size(162, 57);
+            this.rmDez.Size = new System.Drawing.Size(122, 46);
             this.rmDez.TabIndex = 25;
             this.rmDez.Text = "R$ -10";
             this.rmDez.UseVisualStyleBackColor = false;
@@ -189,10 +187,9 @@ namespace PIM
             this.rmUm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
             this.rmUm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rmUm.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rmUm.Location = new System.Drawing.Point(104, 214);
-            this.rmUm.Margin = new System.Windows.Forms.Padding(4);
+            this.rmUm.Location = new System.Drawing.Point(78, 174);
             this.rmUm.Name = "rmUm";
-            this.rmUm.Size = new System.Drawing.Size(162, 57);
+            this.rmUm.Size = new System.Drawing.Size(122, 46);
             this.rmUm.TabIndex = 24;
             this.rmUm.Text = "R$ -1";
             this.rmUm.UseVisualStyleBackColor = false;
@@ -206,10 +203,9 @@ namespace PIM
             this.rmMil.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
             this.rmMil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rmMil.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rmMil.Location = new System.Drawing.Point(104, 439);
-            this.rmMil.Margin = new System.Windows.Forms.Padding(4);
+            this.rmMil.Location = new System.Drawing.Point(78, 357);
             this.rmMil.Name = "rmMil";
-            this.rmMil.Size = new System.Drawing.Size(162, 57);
+            this.rmMil.Size = new System.Drawing.Size(122, 46);
             this.rmMil.TabIndex = 28;
             this.rmMil.Text = "R$ -1000";
             this.rmMil.UseVisualStyleBackColor = false;
@@ -223,10 +219,9 @@ namespace PIM
             this.addMil.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
             this.addMil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addMil.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addMil.Location = new System.Drawing.Point(345, 439);
-            this.addMil.Margin = new System.Windows.Forms.Padding(4);
+            this.addMil.Location = new System.Drawing.Point(259, 357);
             this.addMil.Name = "addMil";
-            this.addMil.Size = new System.Drawing.Size(162, 57);
+            this.addMil.Size = new System.Drawing.Size(122, 46);
             this.addMil.TabIndex = 27;
             this.addMil.Text = "R$ +1000";
             this.addMil.UseVisualStyleBackColor = false;
@@ -238,10 +233,9 @@ namespace PIM
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(195)))), ((int)(((byte)(207)))));
-            this.btnVoltar.Location = new System.Drawing.Point(13, 630);
-            this.btnVoltar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVoltar.Location = new System.Drawing.Point(10, 512);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(127, 65);
+            this.btnVoltar.Size = new System.Drawing.Size(95, 53);
             this.btnVoltar.TabIndex = 29;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
@@ -249,10 +243,10 @@ namespace PIM
             // 
             // InvestimentoBitcoin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(596, 708);
+            this.ClientSize = new System.Drawing.Size(447, 575);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.rmMil);
             this.Controls.Add(this.addMil);
@@ -267,6 +261,7 @@ namespace PIM
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "InvestimentoBitcoin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InvestimentoBitcoin";

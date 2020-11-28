@@ -28,6 +28,10 @@ namespace PIM
         {
             Application.Run(new carteiraInvestimento());
         }
+        private void formControle()
+        {
+            Application.Run(new ControleLiquidacao());
+        }
 
         private void formHome_Load(object sender, EventArgs e)
         {
@@ -54,7 +58,11 @@ namespace PIM
 
         private void btnControle_Click(object sender, EventArgs e)
         {
-
+            ControleLiquidacao controle = new ControleLiquidacao();
+            nt = new Thread(formControle);
+            nt.SetApartmentState(ApartmentState.STA);
+            nt.Start();
+            this.Close();
         }
 
         private void btnSair_Click(object sender, EventArgs e)

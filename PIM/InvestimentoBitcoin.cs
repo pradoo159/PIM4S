@@ -31,7 +31,7 @@ namespace PIM
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
             // Config da conexão
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-MAO1FRB\\SQLEXPRESS;Initial Catalog=BDPIMEXPRESS;User ID=sa;Password=admin123");
+            SqlConnection con = new SqlConnection(Auxiliar.conexaoBD);
             con.Open();
             SqlCommand cmd;
             SqlCommand cmd2;
@@ -173,6 +173,11 @@ namespace PIM
             nt.SetApartmentState(ApartmentState.STA);
             nt.Start();
             this.Close();
+        }
+
+        private void txtValor_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

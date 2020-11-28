@@ -48,7 +48,7 @@ namespace PIM
         {
             
             // Config da conexão
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-MAO1FRB\\SQLEXPRESS;Initial Catalog=BDPIMEXPRESS;User ID=sa;Password=admin123");
+            SqlConnection con = new SqlConnection(Auxiliar.conexaoBD);
 
             String query;
             // QUERY PARA CONSULTAR OS DADOS

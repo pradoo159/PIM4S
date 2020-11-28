@@ -119,7 +119,7 @@ namespace PIM
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-MAO1FRB\\SQLEXPRESS;Initial Catalog=BDPIMEXPRESS;User ID=sa;Password=admin123");
+            SqlConnection con = new SqlConnection(Auxiliar.conexaoBD);
             con.Open();
             SqlCommand cmd;
             if (pessoaFisica)

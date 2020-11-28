@@ -29,7 +29,7 @@ namespace PIM
         {
             InitializeComponent();
             // Config da conexão
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-MAO1FRB\\SQLEXPRESS;Initial Catalog=BDPIMEXPRESS;User ID=sa;Password=admin123");
+            SqlConnection con = new SqlConnection(Auxiliar.conexaoBD);
             try
             {
                 con.Open();

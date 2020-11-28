@@ -21,7 +21,7 @@ namespace PIM
         public carteiraInvestimento()
         {
             InitializeComponent();
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-MAO1FRB\\SQLEXPRESS;Initial Catalog=BDPIMEXPRESS;User ID=sa;Password=admin123");
+            SqlConnection con = new SqlConnection(Auxiliar.conexaoBD);
             try
             {
                 con.Open();
@@ -35,11 +35,11 @@ namespace PIM
 
             if (Auxiliar.CPF != "")
             {
-                cmd = new SqlCommand("select * from Carteira_Investimento where CPF='" + Auxiliar.CPF + "'", con);
+                cmd = new SqlCommand("select SUM(Saldo) from Carteira_Investimento where CPF='" + Auxiliar.CPF + "'", con);
             }
             else
             {
-                cmd = new SqlCommand("select * from Carteira_Investimento where CNPJ='" + Auxiliar.CNPJ + "'", con);
+                cmd = new SqlCommand("select SUM(Saldo) from Carteira_Investimento where CNPJ='" + Auxiliar.CNPJ + "'", con);
             }
 
             SqlDataReader dr = cmd.ExecuteReader();
@@ -50,7 +50,7 @@ namespace PIM
                 dr.Read();
                 try
                 {
-                    valorSaldo = float.Parse(dr["Saldo"].ToString());
+                    valorSaldo = float.Parse(dr[""].ToString());
                 }
                 catch (System.FormatException fmtE)
                 {
@@ -62,9 +62,9 @@ namespace PIM
 
             con.Close();
         }
-        private void formRentabilidade()
+        private void formAdicionarSaldo()
         {
-            Application.Run(new Rentabilidade());
+            Application.Run(new AdicionarSaldo());
         }
 
         private void formHome()
@@ -82,10 +82,10 @@ namespace PIM
 
         }
 
-        private void btnRentabilidade_Click(object sender, EventArgs e)
+        private void btnAdicionarSaldo_Click(object sender, EventArgs e)
         {
-            Rentabilidade rentabilidade = new Rentabilidade();
-            nt = new Thread(formRentabilidade);
+            AdicionarSaldo AdicionarSaldo = new AdicionarSaldo();
+            nt = new Thread(formAdicionarSaldo);
             nt.SetApartmentState(ApartmentState.STA);
             nt.Start();
             this.Close();
@@ -98,6 +98,11 @@ namespace PIM
             nt.SetApartmentState(ApartmentState.STA);
             nt.Start();
             this.Close();
+        }
+
+        private void txtSaldoConta_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
